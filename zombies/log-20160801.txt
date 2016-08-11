@@ -1,0 +1,189 @@
+﻿2016-08-01 12:16:35.339 -06:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/zombies  
+2016-08-01 12:16:36.105 -06:00 [Error] Connection id ""0HKTQ6VSE63E5"": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Configuration value 'Verbose' for category 'Default' is not supported.
+   at Microsoft.Extensions.Logging.Console.ConfigurationConsoleLoggerSettings.TryGetSwitch(String name, LogLevel& level)
+   at Microsoft.Extensions.Logging.Console.ConsoleLoggerProvider.GetFilter(String name, IConsoleLoggerSettings settings)
+   at Microsoft.Extensions.Logging.Console.ConsoleLoggerProvider.CreateLoggerImplementation(String name)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.Logging.Logger..ctor(LoggerFactory loggerFactory, String name)
+   at Microsoft.Extensions.Logging.LoggerFactory.CreateLogger(String categoryName)
+   at Microsoft.Extensions.Logging.Logger`1..ctor(ILoggerFactory factory)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ConstructorCallSite.Invoke(ServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ScopedCallSite.Invoke(ServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.TypeActivatorCache.CreateInstance[TInstance](IServiceProvider serviceProvider, Type implementationType)
+   at Microsoft.AspNetCore.Mvc.Controllers.DefaultControllerFactory.CreateController(ControllerContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAllActionFiltersAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeExceptionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2016-08-01 12:16:36.266 -06:00 [Information] Request finished in 959.6692ms 200 
+2016-08-01 12:16:36.338 -06:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2016-08-01 12:16:36.350 -06:00 [Information] Request finished in 14.493ms 404 
+2016-08-01 12:33:02.061 -06:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/zombies  
+2016-08-01 12:33:02.499 -06:00 [Information] Executing action method "SampleMicroservice.Controllers.ZombieController.Get (zombies)" with arguments (null) - ModelState is Valid
+2016-08-01 12:33:02.568 -06:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2016-08-01 12:33:02.874 -06:00 [Information] Executed action "SampleMicroservice.Controllers.ZombieController.Get (zombies)" in 455.5224ms
+2016-08-01 12:33:02.891 -06:00 [Information] Request finished in 866.6637ms 200 application/json; charset=utf-8
+2016-08-01 12:33:27.622 -06:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/zombies  
+2016-08-01 12:33:27.633 -06:00 [Information] Executing action method "SampleMicroservice.Controllers.ZombieController.Get (zombies)" with arguments (null) - ModelState is Valid
+2016-08-01 12:33:27.646 -06:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2016-08-01 12:33:27.655 -06:00 [Information] Executed action "SampleMicroservice.Controllers.ZombieController.Get (zombies)" in 23.8469ms
+2016-08-01 12:33:27.663 -06:00 [Information] Request finished in 41.7383ms 200 application/json; charset=utf-8
+2016-08-01 12:52:22.410 -06:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/zombies  
+2016-08-01 12:52:22.988 -06:00 [Error] Connection id ""0HKTQ7JSB7O2H"": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Configuration value 'Verbose' for category 'Default' is not supported.
+   at Microsoft.Extensions.Logging.Console.ConfigurationConsoleLoggerSettings.TryGetSwitch(String name, LogLevel& level)
+   at Microsoft.Extensions.Logging.Console.ConsoleLoggerProvider.GetFilter(String name, IConsoleLoggerSettings settings)
+   at Microsoft.Extensions.Logging.Console.ConsoleLoggerProvider.CreateLoggerImplementation(String name)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.Logging.Logger..ctor(LoggerFactory loggerFactory, String name)
+   at Microsoft.Extensions.Logging.LoggerFactory.CreateLogger(String categoryName)
+   at Microsoft.Extensions.Logging.Logger`1..ctor(ILoggerFactory factory)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ConstructorCallSite.Invoke(ServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ScopedCallSite.Invoke(ServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.TypeActivatorCache.CreateInstance[TInstance](IServiceProvider serviceProvider, Type implementationType)
+   at Microsoft.AspNetCore.Mvc.Controllers.DefaultControllerFactory.CreateController(ControllerContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAllActionFiltersAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeExceptionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2016-08-01 12:52:23.122 -06:00 [Information] Request finished in 739.0787ms 200 
+2016-08-01 13:02:26.329 -06:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/zombies  
+2016-08-01 13:02:26.873 -06:00 [Error] Connection id ""0HKTQ7PGAJHQP"": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Configuration value 'Verbose' for category 'Default' is not supported.
+   at Microsoft.Extensions.Logging.Console.ConfigurationConsoleLoggerSettings.TryGetSwitch(String name, LogLevel& level)
+   at Microsoft.Extensions.Logging.Console.ConsoleLoggerProvider.GetFilter(String name, IConsoleLoggerSettings settings)
+   at Microsoft.Extensions.Logging.Console.ConsoleLoggerProvider.CreateLoggerImplementation(String name)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.Logging.Logger..ctor(LoggerFactory loggerFactory, String name)
+   at Microsoft.Extensions.Logging.LoggerFactory.CreateLogger(String categoryName)
+   at Microsoft.Extensions.Logging.Logger`1..ctor(ILoggerFactory factory)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ConstructorCallSite.Invoke(ServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ScopedCallSite.Invoke(ServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.TypeActivatorCache.CreateInstance[TInstance](IServiceProvider serviceProvider, Type implementationType)
+   at Microsoft.AspNetCore.Mvc.Controllers.DefaultControllerFactory.CreateController(ControllerContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAllActionFiltersAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeExceptionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2016-08-01 13:02:27.012 -06:00 [Information] Request finished in 712.5999ms 200 
+2016-08-01 13:07:58.786 -06:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/zombies  
+2016-08-01 13:07:59.310 -06:00 [Information] Executing action method "SampleMicroservice.Controllers.ZombieController.Get (zombies)" with arguments (null) - ModelState is Valid
+2016-08-01 13:07:59.413 -06:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2016-08-01 13:07:59.798 -06:00 [Information] Executed action "SampleMicroservice.Controllers.ZombieController.Get (zombies)" in 578.8355ms
+2016-08-01 13:07:59.798 -06:00 [Information] Request finished in 1070.405ms 200 application/json; charset=utf-8
+2016-08-01 13:10:30.130 -06:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/zombies  
+2016-08-01 13:10:30.593 -06:00 [Information] Executing action method "SampleMicroservice.Controllers.ZombieController.Get (zombies)" with arguments (null) - ModelState is Valid
+2016-08-01 13:10:30.671 -06:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2016-08-01 13:10:30.974 -06:00 [Information] Executed action "SampleMicroservice.Controllers.ZombieController.Get (zombies)" in 460.5455ms
+2016-08-01 13:10:30.974 -06:00 [Information] Request finished in 895.4662ms 200 application/json; charset=utf-8
+2016-08-01 13:19:41.169 -06:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/zombies  
+2016-08-01 13:19:41.607 -06:00 [Information] Executing action method "SampleMicroservice.Controllers.ZombieController.Get (zombies)" with arguments (null) - ModelState is Valid
+2016-08-01 13:19:41.670 -06:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2016-08-01 13:19:41.974 -06:00 [Information] Executed action "SampleMicroservice.Controllers.ZombieController.Get (zombies)" in 451.7906ms
+2016-08-01 13:19:41.989 -06:00 [Information] Request finished in 859.6809ms 200 application/json; charset=utf-8
+2016-08-01 13:20:20.722 -06:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/zombies  
+2016-08-01 13:20:21.333 -06:00 [Error] Connection id ""0HKTQ83GGMRTS"": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Configuration value 'Verbose' for category 'Default' is not supported.
+   at Microsoft.Extensions.Logging.Console.ConfigurationConsoleLoggerSettings.TryGetSwitch(String name, LogLevel& level)
+   at Microsoft.Extensions.Logging.Console.ConsoleLoggerProvider.GetFilter(String name, IConsoleLoggerSettings settings)
+   at Microsoft.Extensions.Logging.Console.ConsoleLoggerProvider.CreateLoggerImplementation(String name)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.Logging.Logger..ctor(LoggerFactory loggerFactory, String name)
+   at Microsoft.Extensions.Logging.LoggerFactory.CreateLogger(String categoryName)
+   at Microsoft.Extensions.Logging.Logger`1..ctor(ILoggerFactory factory)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ConstructorCallSite.Invoke(ServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ScopedCallSite.Invoke(ServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.TypeActivatorCache.CreateInstance[TInstance](IServiceProvider serviceProvider, Type implementationType)
+   at Microsoft.AspNetCore.Mvc.Controllers.DefaultControllerFactory.CreateController(ControllerContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAllActionFiltersAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeExceptionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2016-08-01 13:20:21.474 -06:00 [Information] Request finished in 785.2525ms 200 
+2016-08-01 13:23:00.484 -06:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/zombies  
+2016-08-01 13:23:00.934 -06:00 [Information] Executing action method "SampleMicroservice.Controllers.ZombieController.Get (zombies)" with arguments (null) - ModelState is Valid
+2016-08-01 13:23:00.997 -06:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2016-08-01 13:23:01.279 -06:00 [Information] Executed action "SampleMicroservice.Controllers.ZombieController.Get (zombies)" in 435.9105ms
+2016-08-01 13:23:01.295 -06:00 [Information] Request finished in 846.5779ms 200 application/json; charset=utf-8
+2016-08-01 13:23:56.364 -06:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/zombies  
+2016-08-01 13:23:56.842 -06:00 [Information] Executing action method "SampleMicroservice.Controllers.ZombieController.Get (zombies)" with arguments (null) - ModelState is Valid
+2016-08-01 13:23:56.904 -06:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2016-08-01 13:23:57.232 -06:00 [Information] Executed action "SampleMicroservice.Controllers.ZombieController.Get (zombies)" in 487.3122ms
+2016-08-01 13:23:57.248 -06:00 [Information] Request finished in 921.5665ms 200 application/json; charset=utf-8
